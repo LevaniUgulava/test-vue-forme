@@ -39,10 +39,10 @@ jobs:
       # 6. Vue.js აპლიკაციის სინქრონიზაცია S3-თან
       - name: Sync to S3
         run: |
-          aws s3 sync ./dist s3://test-vue-forme/ --delete
+          aws s3 sync ./dist s3://testbuckerforme/ --delete
 
       # 7. CloudFront ქეშის განახლება
       - name: Invalidate CloudFront Cache
         run: |
-          aws cloudfront create-invalidation --distribution-id E18SX0XNMJD8YS --paths "/*"
+          aws cloudfront create-invalidation --distribution-id E3UU8NDJB6H2EI --paths "/*"
 
