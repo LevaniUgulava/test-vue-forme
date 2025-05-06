@@ -44,5 +44,5 @@ jobs:
       # 7. CloudFront ქეშის განახლება
       - name: Invalidate CloudFront Cache
         run: |
-          aws cloudfront create-invalidation --distribution-id E3UU8NDJB6H2EI --paths "/*"
+          aws cloudfront create-invalidation --distribution-id EQ4K8H9VVC8X2 --paths "/*"
 
